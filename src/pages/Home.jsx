@@ -24,7 +24,7 @@ export default function Home() {
       <Seo title={t("hero.title")} />
 
       {/* HERO */}
-      <section className="amu-hero" data-testid="hero-section">
+      <section className="amu-hero overflow-hidden" data-testid="hero-section">
         <div className="container amu-hero-inner">
           <span className="amu-hero-tag mb-5" data-aos="fade-up">{t("hero.tag")}</span>
           <h1 data-aos="fade-up" data-aos-delay="100">{t("hero.title")}</h1>
