@@ -18,7 +18,7 @@ export default function Programs() {
       <Seo title={t("programs.title")} />
       <PageHead eyebrow={t("nav.programs")} title={t("programs.title")} subtitle={t("programs.tag")} />
 
-      <section className="amu-section" data-testid="programs-section">
+      <section className="amu-section overflow-hidden" data-testid="programs-section">
         <div className="container">
           <div className="row g-4">
             {programs.map((p, i) => (

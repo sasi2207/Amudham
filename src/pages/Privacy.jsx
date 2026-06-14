@@ -6,7 +6,7 @@ export default function Privacy() {
     <>
       <Seo title="Privacy Policy" />
       <PageHead eyebrow="Legal" title="Privacy Policy" subtitle="How we handle your information." />
-      <section className="amu-section">
+      <section className="amu-section overflow-hidden">
         <div className="container" style={{ maxWidth: 820 }}>
           <p>This privacy policy explains how Amudham Women Welfare Trust collects, uses, and protects information shared by visitors, volunteers, and donors. We never sell personal data and use it only for the purposes you consent to (e.g., contacting you, processing your donation, or registering you as a volunteer).</p>
           <h4 className="mt-4">Information we collect</h4>

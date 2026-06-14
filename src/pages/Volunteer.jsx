@@ -40,7 +40,7 @@ export default function Volunteer() {
       <Seo title={t("volunteer.title")} />
       <PageHead eyebrow={t("nav.volunteer")} title={t("volunteer.title")} subtitle={t("volunteer.tag")} />
 
-      <section className="amu-section" data-testid="volunteer-section">
+      <section className="amu-section overflow-hidden" data-testid="volunteer-section">
         <div className="container">
           <div className="row g-5 align-items-center">
             <div className="col-lg-5" data-aos="fade-right">

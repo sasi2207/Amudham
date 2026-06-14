@@ -12,7 +12,7 @@ export default function About() {
       <PageHead eyebrow={t("brand.short")} title={t("about.title")} subtitle={t("about.tag")} />
 
       {/* INTRO */}
-      <section className="amu-section" data-testid="about-intro">
+      <section className="amu-section overflow-hidden" data-testid="about-intro">
         <div className="container">
           <div className="row align-items-center g-5">
             <div className="col-lg-6" data-aos="fade-right">
@@ -32,7 +32,7 @@ export default function About() {
       </section>
 
       {/* VISION / MISSION / HISTORY */}
-      <section className="amu-section bg-cream" data-testid="vision-mission">
+      <section className="amu-section bg-cream overflow-hidden" data-testid="vision-mission">
         <div className="container">
           <div className="row g-4">
             {[
@@ -53,7 +53,7 @@ export default function About() {
       </section>
 
       {/* VALUES */}
-      <section className="amu-section" data-testid="values-section">
+      <section className="amu-section overflow-hidden" data-testid="values-section">
         <div className="container">
           <div className="text-center mb-5" data-aos="fade-up">
             <span className="amu-eyebrow">{t("about.values_title")}</span>
@@ -72,7 +72,7 @@ export default function About() {
       </section>
 
       {/* LOCATION */}
-      <section className="amu-section bg-cream" data-testid="location-section">
+      <section className="amu-section bg-cream overflow-hidden" data-testid="location-section">
         <div className="container">
           <div className="row align-items-center g-5">
             <div className="col-lg-5" data-aos="fade-right">

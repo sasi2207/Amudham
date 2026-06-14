@@ -32,7 +32,7 @@ export default function Donate() {
       <Seo title={t("donate.title")} />
       <PageHead eyebrow={t("nav.donate")} title={t("donate.title")} subtitle={t("donate.tag")} />
 
-      <section className="amu-section" data-testid="donate-section">
+      <section className="amu-section overflow-hidden" data-testid="donate-section">
         <div className="container">
           <p className="amu-section-sub text-center mx-auto" data-aos="fade-up" style={{ maxWidth: 720 }}>
             {t("donate.intro")}
@@ -80,7 +80,7 @@ export default function Donate() {
         </div>
       </section>
 
-      <section className="amu-section bg-cream" data-testid="donate-categories">
+      <section className="amu-section bg-cream overflow-hidden" data-testid="donate-categories">
         <div className="container">
           <div className="text-center mb-5" data-aos="fade-up">
             <span className="amu-eyebrow">{t("donate.categories_title")}</span>

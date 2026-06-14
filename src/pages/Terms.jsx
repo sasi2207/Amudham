@@ -6,7 +6,7 @@ export default function Terms() {
     <>
       <Seo title="Terms & Conditions" />
       <PageHead eyebrow="Legal" title="Terms & Conditions" subtitle="Please read these terms carefully." />
-      <section className="amu-section">
+      <section className="amu-section overflow-hidden">
         <div className="container" style={{ maxWidth: 820 }}>
           <p>By accessing this website, you agree to comply with these terms. Content on this site is for information about Amudham Women Welfare Trust and may not be reproduced without permission.</p>
           <h4 className="mt-4">Donations</h4>

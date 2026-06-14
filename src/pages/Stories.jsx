@@ -23,7 +23,7 @@ export default function Stories() {
       <Seo title={t("stories.title")} />
       <PageHead eyebrow={t("nav.stories")} title={t("stories.title")} subtitle={t("stories.tag")} />
 
-      <section className="amu-section" data-testid="stories-section">
+      <section className="amu-section overflow-hidden" data-testid="stories-section">
         <div className="container">
           <Swiper
             modules={[Pagination, Navigation, Autoplay]}

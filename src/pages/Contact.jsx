@@ -29,7 +29,7 @@ export default function Contact() {
       <Seo title={t("contact.title")} />
       <PageHead eyebrow={t("nav.contact")} title={t("contact.title")} subtitle={t("contact.tag")} />
 
-      <section className="amu-section" data-testid="contact-section">
+      <section className="amu-section overflow-hidden" data-testid="contact-section">
         <div className="container">
           <div className="row g-5">
             <div className="col-lg-5" data-aos="fade-right">
@@ -106,7 +106,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="amu-section-sm" data-testid="contact-map-section">
+      <section className="amu-section-sm overflow-hidden" data-testid="contact-map-section">
         <div className="container">
           <iframe
             title="map"

@@ -34,7 +34,7 @@ export default function Gallery() {
       <Seo title={t("gallery.title")} />
       <PageHead eyebrow={t("nav.gallery")} title={t("gallery.title")} subtitle={t("gallery.tag")} />
 
-      <section className="amu-section" data-testid="gallery-section">
+      <section className="amu-section overflow-hidden" data-testid="gallery-section">
         <div className="container">
           <div className="amu-filter" data-aos="fade-up" data-testid="gallery-filter">
             {CATS.map((c) => (
