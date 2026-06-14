@@ -51,7 +51,7 @@ export default function Home() {
       </section>
 
       {/* INTRO */}
-      <section className="amu-section" data-testid="intro-section">
+      <section className="amu-section overflow-hidden" data-testid="intro-section">
         <div className="container">
           <div className="row align-items-center g-5">
             <div className="col-lg-6" data-aos="fade-right">
@@ -83,7 +83,7 @@ export default function Home() {
       </section>
 
       {/* FEATURES */}
-      <section className="amu-section bg-cream" data-testid="features-section">
+      <section className="amu-section bg-cream overflow-hidden" data-testid="features-section">
         <div className="container">
           <div className="text-center mb-5" data-aos="fade-up">
             <span className="amu-eyebrow">{t("home.feature_title")}</span>
@@ -104,7 +104,7 @@ export default function Home() {
       </section>
 
       {/* PROGRAMS PREVIEW */}
-      <section className="amu-section" data-testid="programs-preview">
+      <section className="amu-section overflow-hidden" data-testid="programs-preview">
         <div className="container">
           <div className="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-5" data-aos="fade-up">
             <div>
@@ -133,7 +133,7 @@ export default function Home() {
       </section>
 
       {/* STATS */}
-      <section className="amu-section-sm" data-testid="stats-section">
+      <section className="amu-section-sm overflow-hidden" data-testid="stats-section">
         <div className="container">
           <div className="text-center mb-4" data-aos="fade-up">
             <span className="amu-eyebrow">{t("home.impact_sub")}</span>
@@ -144,7 +144,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="amu-section" data-testid="cta-section">
+      <section className="amu-section overflow-hidden" data-testid="cta-section">
         <div className="container">
           <div className="amu-cta-band" data-aos="zoom-in">
             <h2 className="amu-h2">{t("home.join_title")}</h2>
