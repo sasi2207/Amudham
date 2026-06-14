@@ -1,0 +1,197 @@
+{
+  "brand": {
+    "name": "Amudham Women Welfare Trust",
+    "short": "Amudham"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "programs": "Programs",
+    "activities": "Activities",
+    "gallery": "Gallery",
+    "stories": "Stories",
+    "volunteer": "Volunteer",
+    "donate": "Donate",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "hero": {
+    "tag": "Women . Nature . Community",
+    "title": "Empowering Women, Protecting Nature, Transforming Communities",
+    "subtitle": "A grassroots movement from Melpakkam village reshaping rural Tamil Nadu, one life at a time.",
+    "cta_join": "Join With Us",
+    "cta_donate": "Donate Now",
+    "cta_volunteer": "Become a Volunteer"
+  },
+  "home": {
+    "intro_title": "Of the people, of the soil, of the tradition",
+    "intro_text": "Amudham Women Welfare Trust is a community-driven organization based in Melpakkam village. We work on women's self-reliance, children's education, rural development, herbal gardens and environmental protection.",
+    "feature_title": "Our Core Focus Areas",
+    "features": {
+      "women": { "title": "Women Empowerment", "desc": "Training, livelihoods and self-help groups that make women self-reliant." },
+      "children": { "title": "Children's Education", "desc": "Learning skills enhancement and protection of children's rights." },
+      "nature": { "title": "Nature Protection", "desc": "Herbal gardens, tree plantation and environmental awareness." },
+      "village": { "title": "Village Development", "desc": "Health, skill development and sustainable livelihood programs." }
+    },
+    "impact_title": "Our Measurable Impact",
+    "impact_sub": "Real numbers, real change",
+    "join_title": "Together, let's build the change",
+    "join_text": "Your small act can transform a woman's life. Join us today."
+  },
+  "stats": {
+    "women": "Women Empowered",
+    "students": "Students Benefited",
+    "trees": "Trees Planted",
+    "villages": "Villages Reached",
+    "awareness": "Awareness Programs",
+    "volunteers": "Volunteers"
+  },
+  "about": {
+    "title": "About Us",
+    "tag": "From the heart of Melpakkam village",
+    "intro": "Amudham Women Welfare Trust is a community organisation working in Villupuram district of Tamil Nadu. We work intensively on women's livelihoods, children's education and environmental protection.",
+    "vision_title": "Our Vision",
+    "vision": "A rural Tamil Nadu where every woman lives with dignity and self-reliance, flourishing in harmony with nature.",
+    "mission_title": "Our Mission",
+    "mission": "To strengthen women and communities through education, training, livelihood and environmental initiatives.",
+    "history_title": "Our Journey",
+    "history": "We began in 2010 as a small self-help collective with a handful of women in distress. Today, we reach hundreds of villages across the region.",
+    "values_title": "Our Values",
+    "values": {
+      "v1": "Transparent service",
+      "v2": "Respect for women",
+      "v3": "Respect for nature",
+      "v4": "Community solidarity",
+      "v5": "Sustainable growth",
+      "v6": "Local traditions"
+    },
+    "location_title": "Our Location",
+    "address": "Melpakkam Village, Tindivanam Taluk, Villupuram District, Tamil Nadu, India."
+  },
+  "programs": {
+    "title": "Our Programs",
+    "tag": "Five life-changing programs",
+    "list": {
+      "p1": { "title": "Learning Skills Enhancement", "desc": "Educational support, supplementary classes and digital learning for rural children." },
+      "p2": { "title": "Village Herbal Garden Initiative", "desc": "A herbal garden in every village to revive traditional medicine and biodiversity." },
+      "p3": { "title": "Environment Protection", "desc": "Tree plantation, anti-plastic awareness and water body conservation." },
+      "p4": { "title": "Women Safety Program", "desc": "Combating gender violence with legal counseling and survivor support." },
+      "p5": { "title": "Women Economic Growth", "desc": "Self-help groups, micro loans and entrepreneurship training." }
+    }
+  },
+  "activities": {
+    "title": "Our Activities",
+    "tag": "Daily on the ground",
+    "list": {
+      "a1": "Child rights protection",
+      "a2": "Rural development",
+      "a3": "Mental & physical health",
+      "a4": "Livelihood enhancement",
+      "a5": "Skill development",
+      "a6": "Environment protection",
+      "a7": "Women safety & development"
+    }
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "tag": "Stories from the field",
+    "all": "All",
+    "categories": {
+      "women": "Women Programs",
+      "students": "Students Activities",
+      "health": "Health Camps",
+      "environment": "Environment",
+      "herbal": "Herbal Gardens",
+      "community": "Community Events"
+    }
+  },
+  "stories": {
+    "title": "Success Stories",
+    "tag": "Faces of change",
+    "items": {
+      "s1": { "name": "Revathi, 34", "role": "Self-Help Group Member", "quote": "Thanks to Amudham's training, I now run my own tailoring shop and my children go to school." },
+      "s2": { "name": "Aadhi, 12", "role": "Student, Melpakkam", "quote": "The supplementary classes helped me top my school in maths. Grateful to Amudham teachers." },
+      "s3": { "name": "Priya, 27", "role": "Volunteer", "quote": "Working here is the most meaningful part of my life. Every woman becomes stronger." },
+      "s4": { "name": "Murugan, 56", "role": "Village Leader", "quote": "The herbal garden program changed the face of our village. Traditional medicine is alive again." }
+    }
+  },
+  "volunteer": {
+    "title": "Become a Volunteer",
+    "tag": "Your time, a woman's future",
+    "intro": "Lend your skill and time to transform a village. Fill the form below and we'll reach out.",
+    "form": {
+      "name": "Full Name",
+      "mobile": "Mobile Number",
+      "email": "Email",
+      "address": "Address",
+      "skills": "Skills (teaching, medicine, design, ...)",
+      "availability": "Availability",
+      "availability_options": {
+        "weekdays": "Weekdays",
+        "weekends": "Weekends",
+        "flexible": "Flexible"
+      },
+      "submit": "Register",
+      "success_title": "Thank you!",
+      "success_text": "Your registration was saved. We'll reach out to you shortly.",
+      "required": "This field is required",
+      "invalid_email": "Please enter a valid email",
+      "invalid_mobile": "Please enter a 10-digit mobile number"
+    }
+  },
+  "donate": {
+    "title": "Donate Now",
+    "tag": "Your hand can change a village",
+    "intro": "Every rupee you give changes a woman, a child and a village.",
+    "upi_label": "UPI ID",
+    "qr_label": "Scan the QR code",
+    "bank_title": "Bank Details",
+    "bank": {
+      "name": "Bank Name",
+      "ac_name": "Account Name",
+      "ac_no": "Account Number",
+      "ifsc": "IFSC Code",
+      "branch": "Branch"
+    },
+    "categories_title": "Where will your donation go?",
+    "categories": {
+      "education": { "title": "Education Support", "desc": "Make a child's education dream come true." },
+      "women": { "title": "Women Empowerment", "desc": "Self-reliance training and livelihoods." },
+      "trees": { "title": "Tree Plantation", "desc": "Every ₹100 plants 5 saplings." },
+      "rural": { "title": "Rural Development", "desc": "Health, environment and community uplift." }
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "tag": "We'd love to hear from you",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "success_title": "Thank you!",
+      "success_text": "Your message has reached us. We'll get back soon."
+    },
+    "info_title": "Contact Information",
+    "address_label": "Address",
+    "phone_label": "Phone",
+    "email_label": "Email",
+    "follow": "Follow us"
+  },
+  "footer": {
+    "tagline": "Empowering women, protecting nature, transforming communities.",
+    "quick_links": "Quick Links",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "rights": "All rights reserved",
+    "made_with": "Made with love"
+  },
+  "common": {
+    "learn_more": "Learn More",
+    "read_more": "Read More",
+    "loading": "Loading..."
+  }
+}

@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@layer base {
+  :root {
+    /* Background */
+    --background: 0 0% 100%;
+    --foreground: 270 20% 15%;
+
+    /* Cards */
+    --card: 0 0% 100%;
+    --card-foreground: 270 20% 15%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 270 20% 15%;
+
+    /* Primary Purple */
+    --primary: 272 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary Pink */
+    --secondary: 330 100% 96%;
+    --secondary-foreground: 320 70% 35%;
+
+    /* Muted */
+    --muted: 300 40% 97%;
+    --muted-foreground: 270 15% 45%;
+
+    /* Accent Pink */
+    --accent: 327 73% 92%;
+    --accent-foreground: 280 80% 30%;
+
+    /* Error */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Borders */
+    --border: 300 25% 88%;
+    --input: 300 25% 88%;
+    --ring: 280 85% 60%;
+
+    /* Charts */
+    --chart-1: 272 91% 60%;
+    --chart-2: 330 81% 60%;
+    --chart-3: 260 80% 55%;
+    --chart-4: 340 82% 65%;
+    --chart-5: 295 75% 60%;
+
+    --radius: 0.75rem;
+
+    /* Custom NGO Colors */
+    --ngo-purple: #9333ea;
+    --ngo-purple-dark: #7e22ce;
+    --ngo-pink: #ec4899;
+    --ngo-pink-light: #fce7f3;
+    --ngo-lavender: #f5f3ff;
+    --ngo-white: #ffffff;
+  }
+
+  .dark {
+    --background: 270 25% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 270 20% 14%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 270 20% 14%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 280 85% 70%;
+    --primary-foreground: 270 30% 10%;
+
+    --secondary: 300 25% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 280 15% 18%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 320 60% 25%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 280 20% 25%;
+    --input: 280 20% 25%;
+    --ring: 300 80% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* NGO Gradient Utilities */
+
+.bg-theme-gradient {
+  background: linear-gradient(
+    135deg,
+    #9333ea 0%,
+    #c026d3 50%,
+    #ec4899 100%
+  );
+}
+
+.text-theme-gradient {
+  background: linear-gradient(
+    135deg,
+    #9333ea,
+    #ec4899
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-theme {
+  background: linear-gradient(
+    135deg,
+    #9333ea,
+    #ec4899
+  );
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-theme:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(147, 51, 234, 0.3);
+}
+
+.section-bg {
+  background: linear-gradient(
+    180deg,
+    #ffffff,
+    #fdf4ff,
+    #fce7f3
+  );
+}
+
+.card-theme {
+  background: white;
+  border: 1px solid #f3e8ff;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.card-theme:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(236, 72, 153, 0.15);
+}
+
+.navbar-theme {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+}
+
+.footer-theme {
+  background: linear-gradient(
+    135deg,
+    #7e22ce,
+    #9333ea,
+    #ec4899
+  );
+  color: white;
+}
+
+/* Debug Wrapper */
+
+[data-debug-wrapper="true"] {
+  display: contents !important;
+}
+
+[data-debug-wrapper="true"] > * {
+  margin-left: inherit;
+  margin-right: inherit;
+  margin-top: inherit;
+  margin-bottom: inherit;
+  padding-left: inherit;
+  padding-right: inherit;
+  padding-top: inherit;
+  padding-bottom: inherit;
+  column-gap: inherit;
+  row-gap: inherit;
+  gap: inherit;
+}
