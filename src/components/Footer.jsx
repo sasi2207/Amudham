@@ -85,7 +85,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="col-lg-2 col-md-6 col-6">
-            <h5 className="fw-bold mb-4 text-secondary">
+            <h5 className="fw-bold mb-4 text-danger">
               {t("footer.quick_links")}
             </h5>
 
@@ -139,7 +139,7 @@ export default function Footer() {
 
           {/* Donate */}
           <div className="col-lg-2 col-md-6 col-6">
-            <h5 className="fw-bold mb-4  text-secondary">
+            <h5 className="fw-bold mb-4  text-danger">
               {t("nav.donate")}
             </h5>
 
@@ -193,7 +193,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="col-lg-4 col-md-12">
-            <h5 className="fw-bold mb-4  text-secondary">
+            <h5 className="fw-bold mb-4  text-danger">
               {t("footer.contact")}
             </h5>
 
