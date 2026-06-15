@@ -3,6 +3,10 @@ import { useTranslation } from "react-i18next";
 import { FaArrowRight, FaHandHoldingHeart, FaLeaf, FaUsers, FaSeedling, FaGraduationCap, FaShieldAlt, FaHandsHelping } from "react-icons/fa";
 import Seo from "../components/Seo";
 import StatsBand from "../components/StatsBand";
+import img1 from '@/images/4.jpeg'
+import img2 from '@/images/8.jpeg'
+import img3 from '@/images/9.jpeg'
+import img4 from '@/images/7.jpeg'
 
 const FEATURES = [
   { k: "women", Icon: FaHandHoldingHeart, klass: "rose" },
@@ -21,7 +25,7 @@ export default function Home() {
   const { t } = useTranslation();
   return (
     <>
-      <Seo title={t("hero.title")} />
+      {/* <Seo title={t("hero.title")} /> */}
 
       {/* HERO */}
       <section className="amu-hero overflow-hidden" data-testid="hero-section">
@@ -65,16 +69,16 @@ export default function Home() {
             <div className="col-lg-6" data-aos="fade-left">
               <div className="row g-3">
                 <div className="col-6">
-                  <img alt="" src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=80" style={{ width: "100%", borderRadius: 18, height: 220, objectFit: "cover" }} loading="lazy" />
+                  <img alt="" src={img1} style={{ width: "100%", borderRadius: 18, height: 220, objectFit: "cover" }} loading="lazy" />
                 </div>
                 <div className="col-6 pt-4">
-                  <img alt="" src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=600&q=80" style={{ width: "100%", borderRadius: 18, height: 220, objectFit: "cover" }} loading="lazy" />
+                  <img alt="" src={img2} style={{ width: "100%", borderRadius: 18, height: 220, objectFit: "cover" }} loading="lazy" />
                 </div>
                 <div className="col-6">
-                  <img alt="" src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=600&q=80" style={{ width: "100%", borderRadius: 18, height: 220, objectFit: "cover" }} loading="lazy" />
+                  <img alt="" src={img3} style={{ width: "100%", borderRadius: 18, height: 220, objectFit: "cover" }} loading="lazy" />
                 </div>
                 <div className="col-6 pt-4">
-                  <img alt="" src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=600&q=80" style={{ width: "100%", borderRadius: 18, height: 220, objectFit: "cover" }} loading="lazy" />
+                  <img alt="" src={img4} style={{ width: "100%", borderRadius: 18, height: 220, objectFit: "cover" }} loading="lazy" />
                 </div>
               </div>
             </div>
@@ -137,7 +141,7 @@ export default function Home() {
         <div className="container">
           <div className="text-center mb-4" data-aos="fade-up">
             <span className="amu-eyebrow">{t("home.impact_sub")}</span>
-            <h2 className="amu-h2 text-white" style={{ color: "var(--amu-ink)" }}>{t("home.impact_title")}</h2>
+            <h2 className="amu-h2 text-dark" style={{ color: "var(--amu-ink)" }}>{t("home.impact_title")}</h2>
           </div>
           <StatsBand />
         </div>

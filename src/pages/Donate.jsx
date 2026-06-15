@@ -3,6 +3,7 @@ import { FaGraduationCap, FaHandHoldingHeart, FaLeaf, FaUsers, FaCopy } from "re
 import Swal from "sweetalert2";
 import Seo from "../components/Seo";
 import PageHead from "../components/PageHead";
+import img from '@/images/QR.jpeg'
 
 const CATEGORIES = [
   { k: "education", Icon: FaGraduationCap, klass: "gold" },
@@ -29,7 +30,7 @@ export default function Donate() {
 
   return (
     <>
-      <Seo title={t("donate.title")} />
+      {/* <Seo title={t("donate.title")} /> */}
       <PageHead eyebrow={t("nav.donate")} title={t("donate.title")} subtitle={t("donate.tag")} />
 
       <section className="amu-section overflow-hidden" data-testid="donate-section">
@@ -43,11 +44,20 @@ export default function Donate() {
               <div className="amu-qr-box" data-testid="qr-box">
                 <h4 style={{ marginBottom: 14 }}>{t("donate.qr_label")}</h4>
                 <div className="qr" data-testid="qr-placeholder">
-                  <div style={{ textAlign: "center" }}>
-                    <div style={{ fontSize: 48, color: "var(--amu-saffron)" }}>⌗</div>
-                    <div>QR code placeholder</div>
-                    <div style={{ fontSize: 11, marginTop: 6, color: "var(--amu-ink-soft)" }}>Replace with real QR</div>
-                  </div>
+              
+
+              <div className="qr" data-testid="qr-placeholder">
+             <img
+              src={img}
+              alt="QR Code"
+              className="img-fluid"
+              style={{
+              width: "180px",
+              height: "180px",
+              objectFit: "contain",
+    }}
+  />
+</div>
                 </div>
                 <div className="mt-3 d-flex align-items-center justify-content-between" style={{ background: "var(--amu-cream)", padding: "12px 16px", borderRadius: 12 }}>
                   <div>

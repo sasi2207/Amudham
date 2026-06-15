@@ -17,7 +17,7 @@ export default function Activities() {
   const { t } = useTranslation();
   return (
     <>
-      <Seo title={t("activities.title")} />
+      {/* <Seo title={t("activities.title")} /> */}
       <PageHead eyebrow={t("nav.activities")} title={t("activities.title")} subtitle={t("activities.tag")} />
 
       <section className="amu-section overflow-hidden" data-testid="activities-section">

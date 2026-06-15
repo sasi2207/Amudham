@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Swal from "sweetalert2";
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebookF, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
+import { FaMapMarkerAlt,FaWhatsapp, FaPhone, FaEnvelope, FaFacebookF, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 import Seo from "../components/Seo";
 import PageHead from "../components/PageHead";
 
@@ -26,7 +26,7 @@ export default function Contact() {
 
   return (
     <>
-      <Seo title={t("contact.title")} />
+      {/* <Seo title={t("contact.title")} /> */}
       <PageHead eyebrow={t("nav.contact")} title={t("contact.title")} subtitle={t("contact.tag")} />
 
       <section className="amu-section overflow-hidden" data-testid="contact-section">
@@ -39,34 +39,59 @@ export default function Contact() {
               <ul className="list-unstyled mt-4" style={{ fontSize: 15, lineHeight: 1.9, color: "var(--amu-ink-soft)" }}>
                 <li className="d-flex gap-3 mb-3">
                   <FaMapMarkerAlt style={{ color: "var(--amu-saffron)", marginTop: 5 }} />
-                  <div>
-                    <div style={{ fontSize: 11, letterSpacing: ".2em", textTransform: "uppercase", color: "var(--amu-emerald)", fontWeight: 700 }}>{t("contact.address_label")}</div>
-                    Melpakkam Village, Tindivanam Taluk,<br/>Villupuram District, Tamil Nadu, India.
-                  </div>
+                <a
+                href="https://maps.google.com/?q=Melpakkam,Villupuram,Tamil Nadu"
+                target="_blank"
+                rel="noreferrer"
+                className="text-decoration-none text-dark"
+              >
+                417, Main Road, Melpakkam Village,
+                Ayyanthoppu Post, Tindivanam (TK),
+                Villupuram District,
+                Tamil Nadu – 604307.
+              </a>
                 </li>
                 <li className="d-flex gap-3 mb-3">
                   <FaPhone style={{ color: "var(--amu-saffron)", marginTop: 5 }} />
-                  <div>
-                    <div style={{ fontSize: 11, letterSpacing: ".2em", textTransform: "uppercase", color: "var(--amu-emerald)", fontWeight: 700 }}>{t("contact.phone_label")}</div>
-                    +91 98765 43210
-                  </div>
+                  <a
+                href="tel:+917598119954"
+                className="text-decoration-none text-dark"
+              >
+                   +91 7598119954
+              </a>
+                </li>
+                <li className="d-flex gap-3 mb-3">
+                
+                                <FaWhatsapp
+                                  className="me-3 mt-1 " style={{ color: "var(--amu-saffron)"}}
+                                />
+                                <a
+                                  href="https://wa.me/919600239955"
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className="text-decoration-none text-dark"
+                                >+91 9600239955
+                                </a>
+                            
                 </li>
                 <li className="d-flex gap-3 mb-3">
                   <FaEnvelope style={{ color: "var(--amu-saffron)", marginTop: 5 }} />
-                  <div>
-                    <div style={{ fontSize: 11, letterSpacing: ".2em", textTransform: "uppercase", color: "var(--amu-emerald)", fontWeight: 700 }}>{t("contact.email_label")}</div>
-                    contact@amudhamtrust.org
-                  </div>
+                  <a
+                href="mailto:amudhamwelfare@gmail.com"
+                className="text-decoration-none text-dark"
+              >
+                amudhamwelfare@gmail.com
+              </a>
                 </li>
               </ul>
 
               <div className="mt-4">
                 <div style={{ fontSize: 13, letterSpacing: ".2em", textTransform: "uppercase", color: "var(--amu-ink-soft)", marginBottom: 10 }}>{t("contact.follow")}</div>
                 <div className="amu-social" style={{ marginTop: 0 }}>
-                  <a href="#" data-testid="c-fb"><FaFacebookF /></a>
-                  <a href="#" data-testid="c-ig"><FaInstagram /></a>
-                  <a href="#" data-testid="c-yt"><FaYoutube /></a>
-                  <a href="#" data-testid="c-tw"><FaTwitter /></a>
+                  <a href="#" data-testid="c-fb" className="text-warning"><FaFacebookF /></a>
+                  <a href="#" data-testid="c-ig"  className="text-warning"><FaInstagram /></a>
+                  <a href="#" data-testid="c-yt"  className="text-warning"><FaYoutube /></a>
+                  <a href="#" data-testid="c-tw" className="text-warning"><FaTwitter /></a>
                 </div>
               </div>
             </div>

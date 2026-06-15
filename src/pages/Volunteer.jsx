@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import Swal from "sweetalert2";
 import Seo from "../components/Seo";
 import PageHead from "../components/PageHead";
+import img from '@/images/4.jpeg'
 
 export default function Volunteer() {
   const { t } = useTranslation();
@@ -37,14 +38,14 @@ export default function Volunteer() {
 
   return (
     <>
-      <Seo title={t("volunteer.title")} />
+      {/* <Seo title={t("volunteer.title")} /> */}
       <PageHead eyebrow={t("nav.volunteer")} title={t("volunteer.title")} subtitle={t("volunteer.tag")} />
 
       <section className="amu-section overflow-hidden" data-testid="volunteer-section">
         <div className="container">
           <div className="row g-5 align-items-center">
             <div className="col-lg-5" data-aos="fade-right">
-              <img alt="" src="https://images.unsplash.com/photo-1593113616828-6f22bca04e2a?auto=format&fit=crop&w=900&q=80" style={{ width: "100%", borderRadius: 22 }} loading="lazy" />
+              <img alt="" src={img} style={{ width: "100%",height:"500px", borderRadius: 22 }} loading="lazy" />
               <p className="amu-section-sub mt-4">{t("volunteer.intro")}</p>
             </div>
             <div className="col-lg-7" data-aos="fade-left">

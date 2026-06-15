@@ -31,7 +31,7 @@ export default function Gallery() {
 
   return (
     <>
-      <Seo title={t("gallery.title")} />
+      {/* <Seo title={t("gallery.title")} /> */}
       <PageHead eyebrow={t("nav.gallery")} title={t("gallery.title")} subtitle={t("gallery.tag")} />
 
       <section className="amu-section overflow-hidden" data-testid="gallery-section">

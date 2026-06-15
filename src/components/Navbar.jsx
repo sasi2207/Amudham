@@ -167,25 +167,7 @@ export default function Navbar() {
           </NavLink>
 
           {/* Language Switch */}
-          <div className="amu-lang-switch ms-3">
-            <span
-              className={i18n.language === "ta" ? "active" : ""}
-              onClick={() => switchLang("ta")}
-              role="button"
-            >
-              தமிழ்
-            </span>
-
-            <span style={{ color: "#ccc", margin: "0 8px" }}>|</span>
-
-            <span
-              className={i18n.language === "en" ? "active" : ""}
-              onClick={() => switchLang("en")}
-              role="button"
-            >
-              English
-            </span>
-          </div>
+         
         </div>
 
         {/* Mobile Toggle */}
@@ -275,25 +257,7 @@ export default function Navbar() {
               {t("nav.contact")}
             </NavLink>
 
-            <div className="amu-lang-switch mt-3">
-              <span
-                className={i18n.language === "ta" ? "active" : ""}
-                onClick={() => switchLang("ta")}
-                role="button"
-              >
-                தமிழ்
-              </span>
-
-              <span style={{ color: "#ccc", margin: "0 8px" }}>|</span>
-
-              <span
-                className={i18n.language === "en" ? "active" : ""}
-                onClick={() => switchLang("en")}
-                role="button"
-              >
-                English
-              </span>
-            </div>
+           
           </div>
         </div>
       )}

@@ -4,7 +4,7 @@ import PageHead from "../components/PageHead";
 export default function Privacy() {
   return (
     <>
-      <Seo title="Privacy Policy" />
+      {/* <Seo title="Privacy Policy" /> */}
       <PageHead eyebrow="Legal" title="Privacy Policy" subtitle="How we handle your information." />
       <section className="amu-section overflow-hidden">
         <div className="container" style={{ maxWidth: 820 }}>

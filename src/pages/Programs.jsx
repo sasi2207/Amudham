@@ -15,7 +15,7 @@ export default function Programs() {
   const programs = ["p1", "p2", "p3", "p4", "p5"];
   return (
     <>
-      <Seo title={t("programs.title")} />
+      {/* <Seo title={t("programs.title")} /> */}
       <PageHead eyebrow={t("nav.programs")} title={t("programs.title")} subtitle={t("programs.tag")} />
 
       <section className="amu-section overflow-hidden" data-testid="programs-section">

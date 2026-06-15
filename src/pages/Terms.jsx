@@ -4,7 +4,7 @@ import PageHead from "../components/PageHead";
 export default function Terms() {
   return (
     <>
-      <Seo title="Terms & Conditions" />
+      {/* <Seo title="Terms & Conditions" /> */}
       <PageHead eyebrow="Legal" title="Terms & Conditions" subtitle="Please read these terms carefully." />
       <section className="amu-section overflow-hidden">
         <div className="container" style={{ maxWidth: 820 }}>

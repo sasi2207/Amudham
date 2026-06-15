@@ -228,7 +228,7 @@ export default function Footer() {
 
             <div className="d-flex mb-3">
               <FaWhatsapp
-                className="me-3 mt-1 text-success"
+                className="me-3 mt-1 text-warning"
               />
               <a
                 href="https://wa.me/919600239955"

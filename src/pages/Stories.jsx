@@ -20,7 +20,7 @@ export default function Stories() {
   const items = ["s1", "s2", "s3", "s4"];
   return (
     <>
-      <Seo title={t("stories.title")} />
+      {/* <Seo title={t("stories.title")} /> */}
       <PageHead eyebrow={t("nav.stories")} title={t("stories.title")} subtitle={t("stories.tag")} />
 
       <section className="amu-section overflow-hidden" data-testid="stories-section">
