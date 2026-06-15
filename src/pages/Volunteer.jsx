@@ -22,17 +22,55 @@ export default function Volunteer() {
     return Object.keys(e).length === 0;
   };
 
-  const onSubmit = (ev) => {
-    ev.preventDefault();
-    if (!validate()) return;
-    Swal.fire({
-      title: t("volunteer.form.success_title"),
-      text: t("volunteer.form.success_text"),
-      icon: "success",
-      confirmButtonColor: "#d97706",
-    });
-    setForm({ name: "", mobile: "", email: "", address: "", skills: "", availability: "" });
-  };
+ const onSubmit = (ev) => {
+  ev.preventDefault();
+
+  if (!validate()) return;
+
+  const message = `
+🌸 AMUDHAM WOMEN WELFARE TRUST 🌸
+
+📌 New Volunteer Registration
+
+👤 Name: ${form.name}
+📱 Mobile: ${form.mobile}
+📧 Email: ${form.email}
+
+🏠 Address:
+${form.address}
+
+💡 Skills:
+${form.skills}
+
+📅 Availability:
+${form.availability}
+`;
+
+  // உங்கள் WhatsApp Number
+  const adminNumber = "9600239955";
+
+  const whatsappUrl = `https://wa.me/${adminNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+
+  window.open(whatsappUrl, "_blank");
+
+  Swal.fire({
+    title: "Success!",
+    text: "Volunteer details prepared for WhatsApp.",
+    icon: "success",
+    confirmButtonColor: "#d97706",
+  });
+
+  setForm({
+    name: "",
+    mobile: "",
+    email: "",
+    address: "",
+    skills: "",
+    availability: "",
+  });
+};
 
   const upd = (k) => (e) => setForm({ ...form, [k]: e.target.value });
 

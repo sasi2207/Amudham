@@ -9,20 +9,59 @@ export default function Contact() {
   const { t } = useTranslation();
   const [form, setForm] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
 
-  const onSubmit = (e) => {
-    e.preventDefault();
-    if (!form.name || !form.email || !form.message) {
-      Swal.fire({ icon: "warning", title: t("volunteer.form.required"), confirmButtonColor: "#d97706" });
-      return;
-    }
+const onSubmit = (e) => {
+  e.preventDefault();
+
+  if (!form.name || !form.email || !form.message) {
     Swal.fire({
-      icon: "success",
-      title: t("contact.form.success_title"),
-      text: t("contact.form.success_text"),
+      icon: "warning",
+      title: "Please fill all required fields",
       confirmButtonColor: "#d97706",
     });
-    setForm({ name: "", email: "", phone: "", subject: "", message: "" });
-  };
+    return;
+  }
+
+  const whatsappMessage = `
+🌸 AMUDHAM WOMEN WELFARE TRUST 🌸
+
+📩 New Contact Enquiry
+
+👤 Name: ${form.name}
+
+📧 Email: ${form.email}
+
+📱 Phone: ${form.phone}
+
+📌 Subject: ${form.subject}
+
+📝 Message:
+${form.message}
+`;
+
+  // Your WhatsApp Number
+  const adminNumber = "919600239955";
+
+  const whatsappUrl =
+    `https://wa.me/${adminNumber}?text=` +
+    encodeURIComponent(whatsappMessage);
+
+  window.open(whatsappUrl, "_blank");
+
+  Swal.fire({
+    icon: "success",
+    title: "Message Ready",
+    text: "Your enquiry has been prepared in WhatsApp.",
+    confirmButtonColor: "#d97706",
+  });
+
+  setForm({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+};
 
   return (
     <>
